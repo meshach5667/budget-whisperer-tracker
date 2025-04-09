@@ -27,14 +27,16 @@ export function Dashboard() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Budget Tracker</h1>
-          <p className="text-muted-foreground">Manage your finances and track your expenses</p>
+          <p className="text-muted-foreground">Managge your finnance annd track your expnses.</p>
         </div>
         <Button onClick={() => setIsAddDialogOpen(true)}>
-          <Plus className="mr-2 h-4 w-4" /> Add Transaction
+          <Plus className="mr-2 h-4 w-4" /> Add Transaction 
+          
         </Button>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      
         <SummaryCard
           title="Current Balance"
           amount={formatCurrency(totalBalance)}
